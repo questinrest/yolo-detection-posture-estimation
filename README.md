@@ -41,8 +41,11 @@ The rule-based classifier successfully predicting sitting, standing, and bending
 ### Video Processing
 The pipeline performs continuous inference over video streams, tracking bounding boxes, drawing skeletal joints, and calculating posture live.
 
-Check out the full processed video test result here:
-**[📹 Watch Video Demonstration](results/video_detection_results/result_video.mp4)**
+Check out the full processed video demonstration below:
+
+<div align="center">
+  <img src="results/video_detection_results/result_video.gif" width="80%" alt="Video Demonstration" />
+</div>
 
 ## Exploratory Background & Engineering Decisions
 The core of the project relies on **YOLO's Pose Estimation** to identify human keypoints (hips, knees, etc.). Instead of training a secondary classifier on these keypoints, I explored a **rule-based algorithmic approach** to classify postures. 
